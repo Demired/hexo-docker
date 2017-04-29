@@ -1,0 +1,10 @@
+nginx:
+    image: "nginx:1.10"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ~/opt/conf/nginx/certificate:/etc/nginx/certificate
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ~/opt/log/nginx:/var/log/nginx
+      - ~/opt/root:/opt/root
