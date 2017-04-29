@@ -15,7 +15,7 @@ enabled http2
 ```
 #login linux
 
-# Install docker,Taking PHP as an example
+# Install docker,Taking CentOS as an example
 yum install -y docker git
 pip install docker-compose
 service docker start
