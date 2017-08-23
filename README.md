@@ -38,5 +38,5 @@ mkdir ~/opt/log/nginx/www_0x8c
 cd ~
 git clone https://github.com/Demired/hexo-docker.git
 cd hexo-docker
-docker-compose up
+docker-compose up -d
 ```
