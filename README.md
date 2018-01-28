@@ -33,7 +33,8 @@ cd ~/opt/root
 git clone -b gh-pages https://github.com/Demired/Demired.github.io.git
 
 # create log folder
-mkdir -p ~/opt/log/nginx/www_0x8c
+mkdir -p ~/opt/log/nginx/t_0x8c ~/opt/log/nginx/www_0x8c
+
 
 cd ~
 git clone https://github.com/Demired/hexo-docker.git
