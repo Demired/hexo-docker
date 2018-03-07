@@ -1,5 +1,5 @@
 nginx:
-    image: "nginx:1.10"
+    image: "nginx:1.13.9"
     ports:
       - "80:80"
       - "443:443"
