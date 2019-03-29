@@ -16,9 +16,18 @@ enabled http2
 #login linux
 
 # Install docker,Taking CentOS as an example
+yum upgrade -y
 yum install -y docker git
-pip install docker-compose
+
 service docker start
+
+curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+docker-compose --version
 
 # create certificate folder
 mkdir -p ~/opt/conf/nginx/certificate
